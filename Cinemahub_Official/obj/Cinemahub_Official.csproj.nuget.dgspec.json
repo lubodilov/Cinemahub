@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lubod\\Desktop\\Project\\Cinemahub\\Cinemahub_Official\\Cinemahub_Official.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\Project\\Cinemahub\\Cinemahub_Official\\Cinemahub_Official.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lubod\\Desktop\\Project\\Cinemahub\\Cinemahub_Official\\Cinemahub_Official.csproj": {
+    "C:\\Users\\Admin\\Desktop\\Project\\Cinemahub\\Cinemahub_Official\\Cinemahub_Official.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lubod\\Desktop\\Project\\Cinemahub\\Cinemahub_Official\\Cinemahub_Official.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Project\\Cinemahub\\Cinemahub_Official\\Cinemahub_Official.csproj",
         "projectName": "Cinemahub_Official",
-        "projectPath": "C:\\Users\\lubod\\Desktop\\Project\\Cinemahub\\Cinemahub_Official\\Cinemahub_Official.csproj",
-        "packagesPath": "C:\\Users\\lubod\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lubod\\Desktop\\Project\\Cinemahub\\Cinemahub_Official\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\Project\\Cinemahub\\Cinemahub_Official\\Cinemahub_Official.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\Project\\Cinemahub\\Cinemahub_Official\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lubod\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -79,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
