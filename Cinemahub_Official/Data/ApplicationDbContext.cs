@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Cinemahub_Official.Models;
 
 namespace Cinemahub_Official.Data
 {
@@ -12,5 +13,6 @@ namespace Cinemahub_Official.Data
             : base(options)
         {
         }
+        public DbSet<Cinemahub_Official.Models.Movies> Movies { get; set; }
     }
 }
