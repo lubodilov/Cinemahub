@@ -26,6 +26,18 @@ namespace Cinemahub_Official.Controllers
             return View(await _context.Actor.ToListAsync());
         }
 
+        // GET: Actors/ShowSearchForm
+        [Authorize]
+        public async Task<IActionResult> ShowSearchForm()
+        {
+            return View();
+        }
+
+        // GET: Actors/ShowSearchResult
+        public async Task<IActionResult> ShowSearchResult(String SearchPhrase)
+        {
+            return View("Index", await _context.Actor.Where(a => a.Name.Contains(SearchPhrase)).ToListAsync());
+        }
         // GET: Actors/Details/5
         [Authorize]
         public async Task<IActionResult> Details(int? id)

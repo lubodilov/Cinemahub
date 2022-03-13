@@ -260,3 +260,4 @@ C:\Users\lubod\Desktop\Project\Cinemahub\Cinemahub_Official\obj\Debug\netcoreapp
 C:\Users\lubod\Desktop\Project\Cinemahub\Cinemahub_Official\obj\Debug\netcoreapp3.1\Razor\Views\Actors\Details.cshtml.g.cs
 C:\Users\lubod\Desktop\Project\Cinemahub\Cinemahub_Official\obj\Debug\netcoreapp3.1\Razor\Views\Actors\Edit.cshtml.g.cs
 C:\Users\lubod\Desktop\Project\Cinemahub\Cinemahub_Official\obj\Debug\netcoreapp3.1\Razor\Views\Actors\Index.cshtml.g.cs
+C:\Users\lubod\Desktop\Project\Cinemahub\Cinemahub_Official\obj\Debug\netcoreapp3.1\Razor\Views\Actors\ShowSearchForm.cshtml.g.cs
