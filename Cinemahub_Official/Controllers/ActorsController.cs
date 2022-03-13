@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Cinemahub_Official.Data;
 using Cinemahub_Official.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Cinemahub_Official.Controllers
 {
@@ -26,6 +27,7 @@ namespace Cinemahub_Official.Controllers
         }
 
         // GET: Actors/Details/5
+        [Authorize]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -44,6 +46,7 @@ namespace Cinemahub_Official.Controllers
         }
 
         // GET: Actors/Create
+        [Authorize]
         public IActionResult Create()
         {
             return View();
@@ -66,6 +69,7 @@ namespace Cinemahub_Official.Controllers
         }
 
         // GET: Actors/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -117,6 +121,7 @@ namespace Cinemahub_Official.Controllers
         }
 
         // GET: Actors/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
