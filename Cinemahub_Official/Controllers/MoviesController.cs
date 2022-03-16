@@ -45,7 +45,7 @@ namespace Cinemahub_Official.Controllers
         }
 
         // GET: Movies/Create
-        [Authorize]
+        
         public IActionResult Create()
         {
             return View();
