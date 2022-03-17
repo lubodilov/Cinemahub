@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Cinemahub_Official.Models.Actor>
+﻿@model Cinemahub_Official.Models.ActorNationalityViewModel
 
 @{
     ViewData["Title"] = "Index";
@@ -9,45 +9,58 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+
+<form asp-controller="Actors" asp-action="Index">
+    <p>
+        <select asp-for="ActorNationality" asp-items="Model.Nationality">
+            <option value="">All</option>
+        </select>
+
+        Name: <input type="text" name="SearchString" />
+        <input type="submit" value="Filter" class="btn btn-primary" />
+    </p>
+</form>
+
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Name)
+                @Html.DisplayNameFor(model => model.Actors[0].Name)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Birthday)
+                @Html.DisplayNameFor(model => model.Actors[0].Birthday)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Nationality)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Status)
+                @Html.DisplayNameFor(model => model.Actors[0].Status)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Birthday)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nationality)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Status)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model.Actors)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Birthday)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nationality)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

@@ -21,9 +21,38 @@ namespace Cinemahub_Official.Controllers
         }
 
         // GET: Actors
-        public async Task<IActionResult> Index()
+        /* public async Task<IActionResult> Index()
         {
             return View(await _context.Actor.ToListAsync());
+        } */
+
+        // GET: Actors
+        public async Task<IActionResult> Index(string actorNationality, string searchString)
+        {
+            // Use LINQ to get list of genres.
+            IQueryable<string> nationalityQuery = from m in _context.Actor
+                                            orderby m.Nationality
+                                            select m.Nationality;
+            var actors = from m in _context.Actor
+                         select m;
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                actors = actors.Where(s => s.Name!.Contains(searchString));
+            }
+
+            if (!string.IsNullOrEmpty(actorNationality))
+            {
+                actors = actors.Where(x => x.Nationality == actorNationality);
+            }
+
+            var actorNationalityVM = new ActorNationalityViewModel
+            {
+                Nationality = new SelectList(await nationalityQuery.Distinct().ToListAsync()),
+                Actors = await actors.ToListAsync()
+            };
+
+            return View(actorNationalityVM);
         }
 
         // GET: Actors/ShowSearchForm
