@@ -14,5 +14,6 @@ namespace Cinemahub_Official.Data
         {
         }
         public DbSet<Cinemahub_Official.Models.Actor> Actor { get; set; }
+        public DbSet<Cinemahub_Official.Models.Movies> Movies { get; set; }
     }
 }
