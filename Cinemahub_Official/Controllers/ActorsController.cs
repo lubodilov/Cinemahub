@@ -21,9 +21,24 @@ namespace Cinemahub_Official.Controllers
         }
 
         // GET: Actors
-        public async Task<IActionResult> Index()
+        /* public async Task<IActionResult> Index()
         {
             return View(await _context.Actor.ToListAsync());
+        } */
+
+        // GET: Actors
+        public async Task<IActionResult> Index(string searchString)
+        {
+            var actors = from m in _context.Actor
+                         select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                actors
+                    = actors.Where(s => s.Name!.Contains(searchString));
+            }
+
+            return View(await actors.ToListAsync());
         }
 
         // GET: Actors/ShowSearchForm
