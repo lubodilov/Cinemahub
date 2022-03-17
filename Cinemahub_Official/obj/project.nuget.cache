@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VvXtQw9koWDpIH6KtLlA2awt0TOyl3YjQ28Ee34d62w7dxFk0La2e3clv+DlLg+AVaCaEze2c7jyJV/il1ZvPw==",
+  "dgSpecHash": "62/4o52WPYdh+Ai8/CKbvDpkKju0GjZUx8dG/70ChV9K1N9M/poWtU5fH6Y04rbZsFqcX84gpUh1fhsDRpB7Nw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Desktop\\ProjectCinema\\Cinemahub\\Cinemahub_Official\\Cinemahub_Official.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\ProjectCinemaHub\\Cinemahub\\Cinemahub_Official\\Cinemahub_Official.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.22\\microsoft.aspnetcore.cryptography.internal.3.1.22.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.22\\microsoft.aspnetcore.cryptography.keyderivation.3.1.22.nupkg.sha512",

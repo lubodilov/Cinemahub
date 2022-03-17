@@ -8847,11 +8847,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\ProjectCinema\\Cinemahub\\Cinemahub_Official\\Cinemahub_Official.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\ProjectCinemaHub\\Cinemahub\\Cinemahub_Official\\Cinemahub_Official.csproj",
       "projectName": "Cinemahub_Official",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\ProjectCinema\\Cinemahub\\Cinemahub_Official\\Cinemahub_Official.csproj",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\ProjectCinemaHub\\Cinemahub\\Cinemahub_Official\\Cinemahub_Official.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\ProjectCinema\\Cinemahub\\Cinemahub_Official\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\ProjectCinemaHub\\Cinemahub\\Cinemahub_Official\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,4 +1,4 @@
-using Cinemahub_Official.Data;
+﻿using Cinemahub_Official.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -34,6 +34,9 @@ namespace Cinemahub_Official
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
             services.AddRazorPages();
+
+            services.AddDbContext<Application1DbContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("Application1DbContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
