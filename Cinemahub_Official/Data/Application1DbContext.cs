@@ -15,5 +15,7 @@ namespace Cinemahub_Official.Data
         }
 
         public DbSet<Cinemahub_Official.Models.Movies> Movies { get; set; }
+
+        public DbSet<Cinemahub_Official.Models.Awards> Awards { get; set; }
     }
 }
