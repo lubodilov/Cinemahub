@@ -35,8 +35,17 @@
             @Html.DisplayFor(model => model.ReleaseDate)
         </dd>
     </dl>
+
+    <p>
+        If you want to see more information about this movie such as actors and awards Use this title - <strong>"@Html.DisplayFor(model => model.Name) movie"</strong>.
+        <br />
+        We sincerely apologize but we are still on a local server and you will have to copy the title and paste it into the Google search engine.
+        <br />
+        And from there you will be able to see additional information about when the film was made Who are the actors who participate, what awards did the film take, when it came out and everything else.
+        <br />
+    </p>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a class="btn btn-outline-warning" asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a class="btn btn-outline-dark" asp-action="Index">Back to List</a>
 </div>

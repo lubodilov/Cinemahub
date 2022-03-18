@@ -36,7 +36,15 @@
         </dd>
     </dl>
 </div>
+<p>
+    If you want to see more information about this actor such as movies and awards Use this title - <strong>"@Html.DisplayFor(model => model.Name) actor"</strong>.
+    <br />
+    We sincerely apologize but we are still on a local server and you will have to copy the title and paste it into the Google search engine.
+    <br />
+    And from there you will be able to see additional information about which films he participated in, which awards he won and the rest of his biography.
+    <br />
+</p>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a class="btn btn-outline-warning" asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a class="btn btn-outline-dark" asp-action="Index">Back to List</a>
 </div>
