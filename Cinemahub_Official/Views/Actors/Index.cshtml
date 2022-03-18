@@ -7,60 +7,79 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a class="btn btn-outline-primary" asp-action="Create">Create New</a>
 </p>
 
 <form asp-controller="Actors" asp-action="Index">
     <p>
-        <select asp-for="ActorNationality" asp-items="Model.Nationality">
-            <option value="">All</option>
-        </select>
+        <!--  <select asp-for="ActorNationality" asp-items="Model.Nationality" class="btn btn-light">
+        <option value="">All</option>
+    </select>
+    Name: <input type="text" name="SearchString" class="form-control me-sm-2"/>
+    <input type="submit" value="Filter" class="btn btn-outline-primary" />-->
+        <table width="700">
+            <tr>
+                <td width="100">
+                    <select asp-for="ActorNationality" asp-items="Model.Nationality" style="height:35px">
+                        <option value="">All </option>
+                    </select>
+                </td>
+                <td width="50">
+                    Name:
+                </td>
+                <td width="450">
+                    <input type="text" name="SearchString" class="form-control me-sm-2" />
+                </td>
+                <td width="100">
+                    <input type="submit" value="Filter" class="btn btn-outline-primary" />
+                </td>
+            </tr>
+        </table>
 
-        Name: <input type="text" name="SearchString" />
-        <input type="submit" value="Filter" class="btn btn-primary" />
     </p>
 </form>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Actors[0].Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Actors[0].Birthday)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Nationality)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Actors[0].Status)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model.Actors)
-        {
+
+    <table class="table">
+        <thead>
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Name)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Birthday)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Nationality)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Status)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                </td>
+                <th>
+                    @Html.DisplayNameFor(model => model.Actors[0].Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Actors[0].Birthday)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nationality)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Actors[0].Status)
+                </th>
+                <th></th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Actors)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Birthday)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nationality)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </td>
+                    <td>
+                        <a class="btn btn-outline-warning" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a class="btn btn-outline-info" asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        <a class="btn btn-outline-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
