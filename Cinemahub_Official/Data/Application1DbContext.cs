@@ -9,7 +9,7 @@ namespace Cinemahub_Official.Data
 {
     public class Application1DbContext : DbContext
     {
-        public Application1DbContext (DbContextOptions<Application1DbContext> options)
+        public Application1DbContext (DbContextOptions options)
             : base(options)
         {
         }

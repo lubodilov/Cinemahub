@@ -20,10 +20,10 @@ namespace Cinemahub_Official.Controllers
         }
 
         // GET: Movies
-       // public async Task<IActionResult> Index()
+        // public async Task<IActionResult> Index()
         //{
-       //     return View(await _context.Movies.ToListAsync());
-       // }
+        //     return View(await _context.Movies.ToListAsync());
+        // }
 
         public async Task<IActionResult> Index(string searchString, string movieDirector)
         {
@@ -80,7 +80,7 @@ namespace Cinemahub_Official.Controllers
         }
 
         // GET: Movies/Create
-        public IActionResult Create()
+        public ViewResult Create()
         {
             return View();
         }
