@@ -18,6 +18,13 @@ a {
   border-color: #1861ac;
 }
 
+.btn-li-lubo {
+    text-align: left;
+    color: grey;
+    background-color: white;
+    /*border-color: #1861ac;*/
+}
+
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: #fff;
   background-color: #1b6ec2;
@@ -43,7 +50,7 @@ html {
 }
 
 .box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+   box-shadow: 0 .25rem .75rem rgb(38 32 32 / 0.10);
 }
 
 button.accept-policy {
@@ -62,6 +69,7 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
+
 .footer {
   position: absolute;
   bottom: 0;

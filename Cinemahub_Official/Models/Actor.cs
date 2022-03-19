@@ -13,7 +13,7 @@ namespace Cinemahub_Official.Models
         [Required]
         public string Name { get; set; }
         
-        [Required]
+        //[Required]
         public DateTime Birthday { get; set; }
         
         [StringLength(30, MinimumLength = 1)]
